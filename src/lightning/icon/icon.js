@@ -1,6 +1,6 @@
 import { LightningElement, api, track } from 'lwc';
-import { classListMutation, normalizeString, isIE11 } from 'c/utilsPrivate';
-import { computeSldsClass, getCategory, isValidName } from 'c/iconUtils';
+import { classListMutation, normalizeString, isIE11 } from 'lightning/utilsPrivate';
+import { computeSldsClass, getCategory, isValidName } from 'lightning/iconUtils';
 
 export default class cIcon extends LightningElement {
     @track state = {};
@@ -50,7 +50,7 @@ export default class cIcon extends LightningElement {
             }
             this.state.iconName = value;
         } else {
-            console.warn(`<c-icon> Invalid icon name ${value}`); // eslint-disable-line no-console
+            console.warn(`<lightning-icon> Invalid icon name ${value}`); // eslint-disable-line no-console
 
             classListMutation(this.classList, {
                 'slds-icon_container_circle': false,

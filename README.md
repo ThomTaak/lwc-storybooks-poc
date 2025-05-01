@@ -41,7 +41,7 @@ To deploy base components in your own project, follow these guidelines.
 
 * [Base components](base-components-recipes/force-app/main/default/lwc/) belong to the `src/c` folder. Clone the component folders you need for your project. For example, clone the [badge folder](https://github.com/salesforce/base-components-recipes/tree/master/force-app/main/default/lwc/badge) to `src/c/badge`. You don't need the `.js-meta.xml` config file.
 * Add a CSS file to the component folder, for example, `src/c/badge/badge.css`. Include `@import "@salesforce/slds/legacy";` in the CSS file.
-* Use the base component in your project with the `<c-badge label="Default"></c-badge>` syntax.
+* Use the base component in your project with the `<lightning-badge label="Default"></c-badge>` syntax.
 
 ## Contributing
 

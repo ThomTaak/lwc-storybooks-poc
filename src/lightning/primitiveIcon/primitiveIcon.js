@@ -1,9 +1,9 @@
 // import dir from '@salesforce/i18n/dir';
 const dir = '';
 import { LightningElement, api } from 'lwc';
-import { classSet } from 'c/utils';
-import { normalizeString as normalize } from 'c/utilsPrivate';
-import * as iconUtils from 'c/iconUtils';
+import { classSet } from 'lightning/utils';
+import { normalizeString as normalize } from 'lightning/utilsPrivate';
+import * as iconUtils from 'lightning/iconUtils';
 import standardTemplate from './primitiveIcon.html';
 import { getIconSvgTemplates } from 'lightning/configProvider';
 

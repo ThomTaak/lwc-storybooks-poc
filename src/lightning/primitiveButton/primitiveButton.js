@@ -1,5 +1,5 @@
 import { LightningElement, api, track } from 'lwc';
-import { isIE11, normalizeBoolean, normalizeString } from 'c/utilsPrivate';
+import { isIE11, normalizeBoolean, normalizeString } from 'lightning/utilsPrivate';
 
 export default class cPrimitiveButton extends LightningElement {
     @track

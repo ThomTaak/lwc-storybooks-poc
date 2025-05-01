@@ -1,7 +1,7 @@
 import { LightningElement, api, track } from 'lwc';
-import { classSet } from 'c/utils';
-import { classListMutation, normalizeString } from 'c/utilsPrivate';
-import { computeSldsClass } from 'c/iconUtils';
+import { classSet } from 'lightning/utils';
+import { classListMutation, normalizeString } from 'lightning/utilsPrivate';
+import { computeSldsClass } from 'lightning/iconUtils';
 
 const DEFAULT_SIZE = 'medium';
 const DEFAULT_VARIANT = 'square';
@@ -86,7 +86,7 @@ export default class cAvatar extends LightningElement {
     handleImageError(event) {
         // eslint-disable-next-line no-console
         console.warn(
-            `<c-avatar> Image with src="${event.target.src}" failed to load.`
+            `<lightning-avatar> Image with src="${event.target.src}" failed to load.`
         );
 
         this._src = '';
